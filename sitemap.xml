@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://parc-ai-league.github.io/PARC2026-AI-League/</loc>
+        <lastmod>2026-07-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://parc-ai-league.github.io/PARC2026-AI-League/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://parc-ai-league.github.io/PARC2026-AI-League/fr/"/>
+    </url>
+    <url>
+        <loc>https://parc-ai-league.github.io/PARC2026-AI-League/fr/</loc>
+        <lastmod>2026-07-30</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://parc-ai-league.github.io/PARC2026-AI-League/fr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://parc-ai-league.github.io/PARC2026-AI-League/"/>
+    </url>
+</urlset>

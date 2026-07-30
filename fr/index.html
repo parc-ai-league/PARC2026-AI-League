@@ -1,0 +1,1622 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://parc-ai-league.github.io/PARC2026-AI-League/fr/">
+      
+      
+      
+      
+        
+          <link rel="alternate" href="/PARC2026-AI-League/" hreflang="en">
+        
+          <link rel="alternate" href="/PARC2026-AI-League/fr/" hreflang="fr">
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>PARC AI League Challenge: Analyse des Données Sportives Grâce à l’IA et au ML - PARC 2026 AI League</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#parc-ai-league-challenge-analyse-des-donnees-sportives-grace-a-lia-et-au-ml" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="./" title="PARC 2026 AI League" class="md-header__button md-logo" aria-label="PARC 2026 AI League" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PARC 2026 AI League
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              PARC AI League Challenge: Analyse des Données Sportives Grâce à l&rsquo;IA et au ML
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Sélectionner la langue">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/PARC2026-AI-League/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/PARC2026-AI-League/fr/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  PARC AI League Challenge: Analyse des Données Sportives Grâce à l&rsquo;IA et au ML
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="./" title="PARC 2026 AI League" class="md-nav__button md-logo" aria-label="PARC 2026 AI League" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    PARC 2026 AI League
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PARC AI League Challenge: Analyse des Données Sportives Grâce à l&rsquo;IA et au ML
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PARC AI League Challenge: Analyse des Données Sportives Grâce à l&rsquo;IA et au ML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#apercu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aperçu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Aperçu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tour-de-qualification-virtuel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tour de qualification (virtuel)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finale-en-personne-3-7-novembre-2026-senegal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finale (en personne, 3 - 7 Novembre 2026 – Sénégal)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prix
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calendrier-du-concours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calendrier du concours
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phases-de-qualification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phases de qualification
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phases de qualification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lancement-virtuel-1082026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lancement virtuel | 10/8/2026
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soumission-du-concept-date-limite-2282026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Soumission du concept | Date limite : 22/8/2026
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rapport-de-proposition-de-projet-date-limite-1292026-note-50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rapport de proposition de projet | Date limite : 12/9/2026 | Note : 50
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presentation-virtuelle-des-propositions-prevue-du-19-au-20-septembre-2026-note-50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Présentation virtuelle des propositions | Prévue du 19 au 20 septembre 2026 | Note : 50
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processus-devaluation-par-les-pairs-pour-les-commentaires-sur-les-propositions-date-limite-2692026-valeur-de-notation-10-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Processus d&rsquo;évaluation par les pairs pour les commentaires sur les propositions | Date limite : 26/9/2026 | Valeur de notation : 10 points
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rapport-final-et-code-du-projet-date-limite-3102026-note-100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rapport final et code du projet | Date limite : 3/10/2026 | Note : 100
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-1-redaction-du-rapport-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partie 1 : Rédaction du rapport final
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie 1 : Rédaction du rapport final">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-definition-de-la-tache-description-du-projet-protocole-devaluation-et-donnees-1-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Définition de la tâche (description du projet), protocole d&rsquo;évaluation et données (1 page)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-reseau-neuronal-modele-dapprentissage-automatique-2-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Réseau neuronal / Modèle d&rsquo;apprentissage automatique (2 pages)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-experience-2-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Expérience (2 pages)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-resultats-experimentaux-et-discussion-2-a-3-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Résultats expérimentaux et discussion (2 à 3 pages)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-references-1-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Références (1 page)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-2-code-finalimplementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partie 2 : Code final/Implémentation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie 2 : Code final/Implémentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#presentation-finale-virtuelle-prevue-du-8-au-9-octobre-2026-note-50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Présentation finale virtuelle | Prévue du 8 au 9 octobre 2026 | Note : 50
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top-10-des-finalistes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Top 10 des finalistes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Top 10 des finalistes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frais-dinscription-des-equipes-des-10-finalistes-date-limite-10102026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frais d&rsquo;inscription des équipes des 10 finalistes | Date limite : 10/10/2026
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soumission-du-rapport-final-et-du-code-date-limite-24102026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Soumission du rapport final et du code | Date limite : 24/10/2026
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presentations-finales-en-direct-date-limite-en-direct-au-concours-parc-2026-valeur-de-notation-115" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Présentations finales en direct | Date limite : En direct au concours PARC 2026 | Valeur de notation : 115
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reglement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Règlement
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Règlement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-de-conduite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code de conduite
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disqualification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disqualification
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#foire-aux-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Foire aux questions
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#apercu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aperçu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Aperçu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tour-de-qualification-virtuel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tour de qualification (virtuel)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finale-en-personne-3-7-novembre-2026-senegal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finale (en personne, 3 - 7 Novembre 2026 – Sénégal)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prix
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calendrier-du-concours" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calendrier du concours
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phases-de-qualification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phases de qualification
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phases de qualification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lancement-virtuel-1082026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lancement virtuel | 10/8/2026
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soumission-du-concept-date-limite-2282026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Soumission du concept | Date limite : 22/8/2026
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rapport-de-proposition-de-projet-date-limite-1292026-note-50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rapport de proposition de projet | Date limite : 12/9/2026 | Note : 50
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presentation-virtuelle-des-propositions-prevue-du-19-au-20-septembre-2026-note-50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Présentation virtuelle des propositions | Prévue du 19 au 20 septembre 2026 | Note : 50
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processus-devaluation-par-les-pairs-pour-les-commentaires-sur-les-propositions-date-limite-2692026-valeur-de-notation-10-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Processus d&rsquo;évaluation par les pairs pour les commentaires sur les propositions | Date limite : 26/9/2026 | Valeur de notation : 10 points
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rapport-final-et-code-du-projet-date-limite-3102026-note-100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rapport final et code du projet | Date limite : 3/10/2026 | Note : 100
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-1-redaction-du-rapport-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partie 1 : Rédaction du rapport final
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie 1 : Rédaction du rapport final">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-definition-de-la-tache-description-du-projet-protocole-devaluation-et-donnees-1-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Définition de la tâche (description du projet), protocole d&rsquo;évaluation et données (1 page)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-reseau-neuronal-modele-dapprentissage-automatique-2-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Réseau neuronal / Modèle d&rsquo;apprentissage automatique (2 pages)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-experience-2-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Expérience (2 pages)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-resultats-experimentaux-et-discussion-2-a-3-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Résultats expérimentaux et discussion (2 à 3 pages)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-references-1-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Références (1 page)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-2-code-finalimplementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partie 2 : Code final/Implémentation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie 2 : Code final/Implémentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#presentation-finale-virtuelle-prevue-du-8-au-9-octobre-2026-note-50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Présentation finale virtuelle | Prévue du 8 au 9 octobre 2026 | Note : 50
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#top-10-des-finalistes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Top 10 des finalistes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Top 10 des finalistes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frais-dinscription-des-equipes-des-10-finalistes-date-limite-10102026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frais d&rsquo;inscription des équipes des 10 finalistes | Date limite : 10/10/2026
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soumission-du-rapport-final-et-du-code-date-limite-24102026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Soumission du rapport final et du code | Date limite : 24/10/2026
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presentations-finales-en-direct-date-limite-en-direct-au-concours-parc-2026-valeur-de-notation-115" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Présentations finales en direct | Date limite : En direct au concours PARC 2026 | Valeur de notation : 115
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reglement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Règlement
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Règlement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-de-conduite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code de conduite
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disqualification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disqualification
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#foire-aux-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Foire aux questions
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<div><h1 id="parc-ai-league-challenge-analyse-des-donnees-sportives-grace-a-lia-et-au-ml">PARC <abbr title="Artificial Intelligence">AI</abbr> League Challenge: Analyse des Données Sportives Grâce à l’IA et au <abbr title="Machine Learning">ML</abbr><a class="headerlink" href="#parc-ai-league-challenge-analyse-des-donnees-sportives-grace-a-lia-et-au-ml" title="Permanent link">¶</a></h1>
+<h2 id="apercu">Aperçu<a class="headerlink" href="#apercu" title="Permanent link">¶</a></h2>
+<p>L’avenir du sport est façonné par des assistants intelligents capables d’analyser les performances, d’interpréter les données et d’apporter un soutien précieux aux athlètes, aux entraîneurs et aux officiels grâce à des informations pertinentes et basées sur les données. Propulsés par l’intelligence artificielle (IA), ces systèmes ont le potentiel de transformer l’entraînement, l’élaboration de stratégies, la prévention des blessures et l’évaluation des performances à tous les niveaux sportifs.</p>
+<p>Dans le cadre du concours <abbr title="Artificial Intelligence">AI</abbr>-League, les équipes devront réfléchir, concevoir et développer des solutions basées sur l’IA/<abbr title="Machine Learning">ML</abbr> pour aider les entraîneurs, les athlètes et les officiels à prendre des décisions éclairées avant, pendant et après les compétitions. Les participants pourront exploiter l’apprentissage automatique (<abbr title="Machine Learning">ML</abbr>), la vision par ordinateur (<abbr title="Computer Vision">CV</abbr>), le traitement automatique du langage naturel (TALN), les grands modèles de langage (GML), l’analyse de données ou d’autres technologies d’IA pour créer des solutions innovantes répondant aux défis concrets de l’écosystème sportif.</p>
+<p>Les équipes sont encouragées à développer des solutions créatives capables d’analyser les performances des athlètes, d’évaluer les tactiques, de générer des recommandations d’entraînement personnalisées, d’interpréter les statistiques des matchs, d’appuyer les décisions arbitrales, d’améliorer l’accessibilité ou de renforcer l’engagement des supporters. Les solutions devront démontrer comment l’intelligence artificielle (IA) peut enrichir l’expertise humaine tout en promouvant l’équité, la coopération et l’excellence dans le sport.</p>
+<p>Ce concours encourage les participants à allier innovation technique et impact pratique, en démontrant comment les solutions basées sur l’IA peuvent contribuer à un entraînement plus intelligent, à une meilleure prise de décision et à l’évolution continue des technologies sportives.</p>
+<p>Le concours se déroule en deux phases :
+<strong>Phases de Qualifications</strong> et <strong>Finales</strong>. Vous trouverez ci-dessous un résumé du calendrier du concours et des livrables requis à chaque étape.</p>
+<h3 id="tour-de-qualification-virtuel">Tour de qualification (virtuel)<a class="headerlink" href="#tour-de-qualification-virtuel" title="Permanent link">¶</a></h3>
+<p>Les équipes doivent réaliser six livrables pour participer à la finale. Les 10 meilleures équipes ayant cumulé les meilleurs scores pour tous les livrables seront qualifiées.</p>
+<p><strong>Livrables:</strong></p>
+<ol>
+<li>
+<p>Document conceptuel – Présentation de l’idée initiale et du problème.</p>
+</li>
+<li>
+<p>Rapport de proposition – Explication détaillée de la solution d’IA proposée.</p>
+</li>
+<li>
+<p>Présentation de la proposition – Présentation virtuelle de la solution.</p>
+</li>
+<li>
+<p>Évaluation par les pairs – Les équipes évaluent et commentent le travail de leurs collègues.</p>
+</li>
+<li>
+<p>Rapport final – Documentation complète du développement du projet et des résultats.</p>
+</li>
+<li>
+<p>Présentation finale – Présentation virtuelle résumant le projet.</p>
+</li>
+</ol>
+<h3 id="finale-en-personne-3-7-novembre-2026-senegal">Finale (en personne, 3 - 7 Novembre 2026 – Sénégal)<a class="headerlink" href="#finale-en-personne-3-7-novembre-2026-senegal" title="Permanent link">¶</a></h3>
+<p>Les 10 finalistes s’affronteront en personne, où leurs modèles d’IA et leurs recherches seront évalués sur la base de deux livrables finaux.</p>
+<p><strong>Livrables:</strong></p>
+<ol>
+<li>
+<p>Présentation finale – Présentation en personne au jury comprenant une présentation PowerPoint, un poster et une version imprimée du rapport final.</p>
+</li>
+<li>
+<p>Résultats des tests de modèles – Évaluation des performances de la solution d’IA.</p>
+</li>
+</ol>
+<h3 id="prix">Prix<a class="headerlink" href="#prix" title="Permanent link">¶</a></h3>
+<ul>
+<li>Premier prix : 1 000 $</li>
+</ul>
+<h3 id="calendrier-du-concours">Calendrier du concours<a class="headerlink" href="#calendrier-du-concours" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>10/8</strong> : Début des qualifications ; Règlement publié</li>
+<li><strong>22/8</strong>: Date limite de soumission du document conceptuel et de l’accord (disqualification en cas de non-respect)</li>
+<li><strong>12/9</strong>: Date limite de soumission du rapport de proposition (50 points ; -10 points par jour de retard)</li>
+<li><strong>19/9-20/9</strong>: Date limite de soumission de la proposition virtuelle (50 points ; 10 minutes maximum, pénalités en cas de dépassement du délai ou de non-participation de tous les membres)</li>
+<li><strong>26/9</strong>: Date limite de soumission des commentaires de l’évaluation par les pairs (10 points ; requis pour l’obtention de la totalité des crédits)</li>
+<li><strong>3/10</strong>: Date limite de soumission du rapport final et du code du projet (100 points ; -10 points par jour de retard)</li>
+<li><strong>8/10-9/10</strong>: Date limite de soumission de la présentation finale virtuelle (50 points ; 10 minutes maximum, pénalités en cas de dépassement du délai ou de non-participation de tous les membres)</li>
+<li><strong>10/10</strong>: Annonce des 10 finalistes</li>
+<li><strong>17/10</strong>: Date limite de soumission des frais d’inscription des équipes des 10 finalistes</li>
+<li><strong>24/10</strong>: Remise du rapport final et du code du projet (facultatif ; aucune notation supplémentaire).</li>
+<li><strong>3/11-7/11</strong> : Présentations en direct au PARC 2026 au Sénégal (50 points).</li>
+</ul>
+<p>Les équipes seront informées de tout ajustement des dates.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Échéance</th>
+<th style="text-align: left;">Activité</th>
+<th style="text-align: left;">Notation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">10/8</td>
+<td style="text-align: left;"><strong>Étape de qualification : Début du concours et publication du règlement</strong></td>
+<td style="text-align: left;"><strong>0 pt</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">22/8</td>
+<td style="text-align: left;"><strong>Échéance de la note conceptuelle et de l’accord</strong></td>
+<td style="text-align: left;"><strong>0 pt</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">12/9</td>
+<td style="text-align: left;"><strong>Échéance du rapport de proposition</strong></td>
+<td style="text-align: left;"><strong>50 pts</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">19/9 - 20/9</td>
+<td style="text-align: left;"><strong>Présentation virtuelle de la proposition</strong></td>
+<td style="text-align: left;"><strong>50 pts</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">26/9</td>
+<td style="text-align: left;"><strong>Soumission des commentaires de l’évaluation par les pairs</strong></td>
+<td style="text-align: left;"><strong>10 pts</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">3/10</td>
+<td style="text-align: left;"><strong>Échéance du rapport final et du code du projet</strong></td>
+<td style="text-align: left;"><strong>100 pts</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">8/10 - 9/10</td>
+<td style="text-align: left;"><strong>Présentation finale virtuelle pour l’étape de qualification</strong></td>
+<td style="text-align: left;"><strong>50 pts</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">10/10</td>
+<td style="text-align: left;"><strong>Épreuve finale : Annonce des 10 finalistes</strong></td>
+<td style="text-align: left;"><strong>0 pt</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">17/10</td>
+<td style="text-align: left;"><strong>Date limite de paiement des frais d’inscription des équipes des 10 finalistes</strong></td>
+<td style="text-align: left;"><strong>0 pt</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">24/10</td>
+<td style="text-align: left;"><strong>Remise du rapport final et du code du projet (facultatif)</strong></td>
+<td style="text-align: left;"><strong>0 pt</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;">3/11 - 7/11</td>
+<td style="text-align: left;"><strong>Présentations en direct au concours PARC 2026 au Sénégal</strong></td>
+<td style="text-align: left;"><strong>115 pts</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="phases-de-qualification">Phases de qualification<a class="headerlink" href="#phases-de-qualification" title="Permanent link">¶</a></h2>
+<h3 id="lancement-virtuel-1082026">Lancement virtuel | 10/8/2026<a class="headerlink" href="#lancement-virtuel-1082026" title="Permanent link">¶</a></h3>
+<p>Un lancement virtuel aura lieu le 26 mars pour présenter le défi et permettre aux équipes participantes de poser des questions. Lors de cette session, nous passerons en revue les détails, le règlement et les attentes de la compétition afin de garantir une bonne préparation de toutes les équipes. La participation à cette session est facultative, mais elle sera enregistrée et accessible à toutes les équipes à leur convenance.</p>
+<h3 id="soumission-du-concept-date-limite-2282026">Soumission du concept | Date limite : 22/8/2026<a class="headerlink" href="#soumission-du-concept-date-limite-2282026" title="Permanent link">¶</a></h3>
+<p>Votre équipe doit sélectionner un article issu d’une conférence ou d’une revue de renom, et chaque article ne peut être utilisé que par une seule équipe. Utilisez ce <a href="https://docs.google.com/spreadsheets/d/1gQBJjKiqM_coqygt1bHrOBdftYZwUwkQeeRObN7GtK4/edit?usp=sharing">suivi</a> pour soumettre l’article sélectionné. La sélection se fait par ordre d’arrivée.</p>
+<p>Votre équipe doit soumettre le concept d’une page avant le 22/8/2026 à 20h00 GMT pour rester éligible au concours. <strong>Toute soumission non effectuée avant la date limite entraînera la disqualification</strong>. Soumettez le concept d’une page au format Word par courriel à <a href="mailto:info@parcrobotics.org">info@parcrobotics.org</a> et en copie à <a href="mailto:atapo@parcrobotics.org">atapo@parcrobotics.org</a>.</p>
+<p>Si vous cherchez des idées sur les domaines de recherche en apprentissage automatique, voici une suggestion non exhaustive de catégories à explorer:</p>
+<ul>
+<li>
+<p>Vision par ordinateur (<abbr title="Computer Vision">CV</abbr>) : classification d’images, détection d’objets, conversion d’images en texte, etc.</p>
+</li>
+<li>
+<p>Traitement automatique du langage naturel (TALN): synthèse de texte, réponses aux questions, etc.</p>
+</li>
+<li>
+<p>Méta-apprentissage: apprentissage par transfert, apprentissage par approches multiples, etc.</p>
+</li>
+</ul>
+<p>Votre document conceptuel doit inclure les éléments suivants:</p>
+<ol>
+<li>Titre et citation</li>
+<li>
+<p>Indiquez clairement le titre de l’article sélectionné et fournissez une citation complète, incluant les auteurs, le nom de la revue/conférence et l’année de publication.</p>
+</li>
+<li>
+<p>Résumé de l’article</p>
+</li>
+<li>Expliquez le problème clé abordé dans l’article.</li>
+<li>
+<p>Résumez les principales conclusions, méthodes et résultats.</p>
+</li>
+<li>
+<p>Pertinence pour le concours</p>
+</li>
+<li>
+<p>Décrivez le lien entre cet article et le <strong>thème du concours : l’innovation dans le secteur minier</strong> et ses applications concrètes.</p>
+</li>
+<li>
+<p>Approche de votre équipe</p>
+</li>
+<li>Expliquez comment votre équipe prévoit de développer ou d’appliquer les concepts de l’article.</li>
+<li>
+<p>Identifiez les modifications, améliorations ou perspectives uniques que votre équipe explorera.</p>
+</li>
+<li>
+<p>Défis potentiels et prochaines étapes</p>
+</li>
+<li>Soulignez les difficultés potentielles liées à la mise en œuvre des méthodes de l’article.</li>
+<li>Décrivez les prochaines étapes que votre équipe suivra pour tester et valider les idées.</li>
+</ol>
+<p>Outre la fiche conceptuelle, toutes les équipes doivent signer et soumettre l’accord stipulant que toutes les œuvres créées et soumises pour le concours de la Ligue IA constituent leur propriété intellectuelle. Elles accordent toutefois à la Compétition Panafricaine de Robotique (PARC) le droit de présenter, reproduire et distribuer leurs travaux à des fins promotionnelles, éducatives et d’archivage. Cliquez <a href="../assets/AI%20Agreement.pdf">ici</a> pour consulter l’accord. Toute absence de signature et de soumission de cet accord, ainsi que de la fiche conceptuelle, avant le 22 aout 2026, entraînera la disqualification du concours.</p>
+<h3 id="rapport-de-proposition-de-projet-date-limite-1292026-note-50">Rapport de proposition de projet | Date limite : 12/9/2026 | Note : 50<a class="headerlink" href="#rapport-de-proposition-de-projet-date-limite-1292026-note-50" title="Permanent link">¶</a></h3>
+<p>L’objectif principal de la proposition de projet est de s’appuyer sur les résultats existants du modèle choisi, par exemple le réseau neuronal. Soumettez la proposition de projet au format Word par courriel à <a href="mailto:atapo@parcrobotics.org">atapo@parcrobotics.org</a>, en copiant <a href="mailto:info@parcrobotics.org">info@parcrobotics.org</a> et l’adresse courriel de votre équipe d’évaluation (à venir), avant la date limite du 22/8/2026 à 20h GMT. La proposition sera notée sur 50 points. Cliquez <a href="../assets/PARC%202026%20AI%20Rubric%20&amp;%20Scoring%20Scale.pdf">ici</a> pour consulter la grille d’évaluation et l’échelle de notation. 10 points seront déduits par jour de retard. La proposition doit comporter six pages, chaque section étant sur une page distincte (police de 11 pt, marges de 2,54 cm). Les équipes doivent utiliser les sections suivantes pour la mise en page de leur proposition:</p>
+<ul>
+<li>
+<p>Section 1 : Définition de la tâche, protocole d’évaluation et données. Indiquez la tâche, le jeu de données et les métriques prévus, et incluez une référence associée.</p>
+</li>
+<li>
+<p>Section 2 : Identifiez le modèle d’apprentissage à utiliser, par exemple, le modèle d’apprentissage automatique par réseau neuronal, ainsi que les références associées. Une ébauche de la synthèse du modèle dans cette section est requise, ainsi qu’une description des figures ou tableaux à utiliser. Les contraintes du modèle incluent : si un framework ne s’exécute pas facilement pour votre équipe après avoir lu attentivement la documentation relative à son installation, son exécution et son réentraînement, ou s’il est difficile de voir où les paramètres et hyperparamètres pourraient être modifiés, n’utilisez pas ce(s) modèle(s).</p>
+</li>
+<li>
+<p>Section 3 : Plan d’expérience. Un tableau présentant brièvement la ou les questions de recherche, les variables et les hypothèses, telles que décrites dans les exigences de rédaction ci-dessous, ainsi qu’un résumé des modifications/du code attendus pour mener votre expérience.</p>
+</li>
+<li>
+<p>Section 4 : Résultats expérimentaux et discussion. Résumé des résultats qui seront collectés, ainsi que les tableaux et figures qui les présenteront. Comment les résultats seront utilisés pour tester vos hypothèses et ce que vous attendez de vos questions de recherche si les hypothèses sont (a) confirmées, (2) contredites ou (3) non clairement confirmées ou contredites. Nous souhaitons éviter le résultat (3) ; réfléchir à cette possibilité permet souvent d’améliorer nos plans d’expérience.</p>
+</li>
+<li>
+<p>Section 5 : Références. Au moins une page, avec les références des sections 1, 2 et éventuellement de la section 3.</p>
+</li>
+<li>
+<p>Section 6 : Test de viabilité : Ce document vise à confirmer que vous serez capable d’utiliser le modèle prévu. Fournissez un résultat ou une capture d’écran montrant que vous êtes capable d’exécuter le modèle conformément au cadre que vous utilisez. Indiquez également le temps nécessaire à l’exécution du modèle sur l’ensemble de test et la taille de l’ensemble de test pour votre tâche. Le modèle n’a pas besoin d’être ajusté à l’ensemble des données. Fournissez un deuxième résultat ou une capture d’écran montrant clairement que vous êtes capable d’entraîner le modèle pendant une époque sur l’ensemble de données. Incluez également le temps nécessaire à l’entraînement pour une époque donnée et le nombre d’échantillons d’entraînement.</p>
+</li>
+</ul>
+<h3 id="presentation-virtuelle-des-propositions-prevue-du-19-au-20-septembre-2026-note-50">Présentation virtuelle des propositions | Prévue du 19 au 20 septembre 2026 | Note : 50<a class="headerlink" href="#presentation-virtuelle-des-propositions-prevue-du-19-au-20-septembre-2026-note-50" title="Permanent link">¶</a></h3>
+<p>La présentation des propositions se déroulera en ligne le 19 ou le 20 septembre. Les équipes pourront choisir leur créneau horaire préféré selon le principe du premier arrivé, premier servi. Chaque équipe dispose de 15 minutes pour sa présentation, dont 10 minutes maximum pour présenter un résumé de son projet à ce jour (la durée sera limitée à 10 minutes) et 5 minutes pour répondre aux questions du jury. Chaque membre de l’équipe doit parler pendant au moins 2 minutes.
+La présentation sera notée sur 50 points. Cliquez <a href="../assets/PARC%202026%20AI%20Rubric%20&amp;%20Scoring%20Scale.pdf">ici</a> pour consulter la grille d’évaluation et le barème de notation. 2 points seront déduits pour chaque minute de parole au-delà de 10 minutes. De plus, 2 points seront déduits pour chaque membre de l’équipe qui ne respecte pas le délai minimum de 2 minutes.</p>
+<p>Éléments de discussion :</p>
+<ol>
+<li>Tâche d’apprentissage et question(s) de recherche</li>
+<li>Modèle d’apprentissage</li>
+<li>Plan d’expérience (y compris l’ensemble de données)</li>
+<li>Résultats préliminaires et lien avec la ou les questions de recherche</li>
+</ol>
+<h3 id="processus-devaluation-par-les-pairs-pour-les-commentaires-sur-les-propositions-date-limite-2692026-valeur-de-notation-10-points">Processus d’évaluation par les pairs pour les commentaires sur les propositions | Date limite : 26/9/2026 | Valeur de notation : 10 points<a class="headerlink" href="#processus-devaluation-par-les-pairs-pour-les-commentaires-sur-les-propositions-date-limite-2692026-valeur-de-notation-10-points" title="Permanent link">¶</a></h3>
+<p>Dans le cadre du concours, chaque équipe sera jumelée aléatoirement à une autre équipe pour une évaluation par les pairs de sa proposition. Ce processus garantit que les équipes reçoivent des commentaires constructifs avant la soumission. Chaque équipe doit fournir une évaluation par les pairs d’une page de la proposition de son équipe jumelée. Cette évaluation doit être constructive et viser à aider l’équipe à améliorer son travail. Les équipes reçoivent 10 points pour l’envoi de l’évaluation par les pairs à leur équipe jumelée.</p>
+<p>Votre évaluation doit comprendre les sections suivantes :</p>
+<ol>
+<li>
+<p>Points forts : Identifiez les points forts de la proposition. Mettez en avant les sections bien expliquées, les questions de recherche claires, la méthodologie solide ou l’utilisation efficace des figures et des tableaux.</p>
+</li>
+<li>
+<p>Points à améliorer : Donnez des commentaires constructifs sur les sections qui nécessitent plus de clarté, des détails supplémentaires ou une meilleure organisation. Suggérez des améliorations aux explications, à la conception de l’expérience ou à la présentation.</p>
+</li>
+<li>
+<p>Suggestions générales : Donnez des recommandations générales sur la manière dont l’équipe peut affiner sa proposition avant la soumission finale. Cela peut inclure l’amélioration de la mise en page, le renforcement des arguments ou l’ajout de références manquantes.</p>
+</li>
+</ol>
+<p>Soyez professionnel et réfléchi dans vos commentaires. L’objectif est d’aider vos pairs à améliorer leur travail tout en améliorant vos propres capacités d’analyse et de révision.</p>
+<p>Exigences et dates limites d’évaluation par les pairs :</p>
+<ol>
+<li>
+<p>Soumission de la proposition pour évaluation – Chaque équipe doit soumettre sa proposition à son équipe jumelée avant le 26 septembre 2026.</p>
+</li>
+<li>
+<p>Le non-respect de cette date limite entraînera une déduction de 10 points.</p>
+</li>
+<li>
+<p>Commentaires – Chaque équipe doit examiner la proposition de son équipe jumelée et fournir des commentaires constructifs avant le 26 septembre 2026 (20 h GMT).</p>
+</li>
+<li>
+<p>Le non-respect de cette date limite entraînera une déduction de 10 points.</p>
+</li>
+</ol>
+<p>Pénalité et points automatiques :</p>
+<ul>
+<li>
+<p>Si une équipe ne reçoit pas de proposition de son équipe jumelée, elle ne sera pas pénalisée pour défaut de commentaires.</p>
+</li>
+<li>
+<p>Si une équipe ne reçoit pas de retour sur sa proposition avant le 7 septembre (20h GMT), elle recevra automatiquement 10 points en compensation de la gêne occasionnée.</p>
+</li>
+</ul>
+<p>Ce processus d’évaluation par les pairs est essentiel pour améliorer la qualité des propositions et garantir que les équipes peaufinent leur travail avant la soumission finale.</p>
+<h3 id="rapport-final-et-code-du-projet-date-limite-3102026-note-100">Rapport final et code du projet | Date limite : 3/10/2026 | Note : 100<a class="headerlink" href="#rapport-final-et-code-du-projet-date-limite-3102026-note-100" title="Permanent link">¶</a></h3>
+<p>Le rapport et le code doivent être préparés par l’équipe dans son ensemble. Par exemple, tous les participants doivent contribuer à la fois au code et au rapport final. Veuillez noter que pour la Partie 1 : Rédaction du rapport final, la profondeur technique, l’analyse et la clarté de la rédaction (y compris la conception, le placement et la mise en forme des figures et des graphiques) seront des facteurs à peu près équivalents dans la note attribuée. Pour l’évaluation de la Partie 2 : Code final/Implémentation, l’utilisation judicieuse des opérations existantes intégrées au framework, l’organisation du code et le style seront des facteurs pris en compte dans la notation.</p>
+<h2 id="partie-1-redaction-du-rapport-final">Partie 1 : Rédaction du rapport final<a class="headerlink" href="#partie-1-redaction-du-rapport-final" title="Permanent link">¶</a></h2>
+<p>Le rapport final du projet, à remettre le 3/10/2026 à 20h GMT, sera noté sur 50 points. Cliquez <a href="../assets/PARC%202026%20AI%20Rubric%20&amp;%20Scoring%20Scale.pdf">ici</a> pour consulter la grille d’évaluation et l’échelle de notation. 10 points seront déduits par jour de retard. Veuillez soumettre le rapport final au format Word par courriel à <a href="mailto:info@parcrobotics.org">info@parcrobotics.org</a>, en mettant en copie <a href="mailto:atapo@parcrobotics.org">atapo@parcrobotics.org</a>.</p>
+<p>Vous trouverez ci-dessous les sections obligatoires du rapport, ainsi que les notes relatives à chaque section. Le rapport doit comporter 8 à 9 pages, en police de 11 pt, avec des marges de 2,5 cm, et inclure tous les éléments tels que les figures, les tableaux, les graphiques et la page de références. Les longueurs de page suivantes sont recommandées, mais peuvent varier à la discrétion de l’équipe.</p>
+<h3 id="1-definition-de-la-tache-description-du-projet-protocole-devaluation-et-donnees-1-page">1. Définition de la tâche (description du projet), protocole d’évaluation et données (1 page)<a class="headerlink" href="#1-definition-de-la-tache-description-du-projet-protocole-devaluation-et-donnees-1-page" title="Permanent link">¶</a></h3>
+<p>Avec une ou deux figures illustrant la tâche et le déroulement de l’évaluation. Incluez une référence à un article ou un ouvrage définissant la tâche et le jeu de données, de préférence rédigé par les auteurs du jeu de données sous la forme que vous utilisez. Citez cet article dans votre discussion, en résumant tout autre détail pertinent relatif à la définition de la tâche.</p>
+<h3 id="2-reseau-neuronal-modele-dapprentissage-automatique-2-pages">2. Réseau neuronal / Modèle d’apprentissage automatique (2 pages)<a class="headerlink" href="#2-reseau-neuronal-modele-dapprentissage-automatique-2-pages" title="Permanent link">¶</a></h3>
+<ul>
+<li>Résumé du modèle d’apprentissage du réseau neuronal</li>
+<li>N’oubliez pas d’inclure la métrique de perte utilisée dans le modèle d’entraînement.</li>
+<li>
+<p>Concentrez-vous sur une définition claire du modèle et expliquez ses éléments clés.</p>
+</li>
+<li>
+<p>Utilisez des figures si elles facilitent la compréhension. Privilégiez les figures créées par les équipes ; lorsque les figures, tableaux, etc. sont tirés d’autres documents, ils doivent être explicitement cités pour plus de clarté.</p>
+</li>
+<li>
+<p>Concentrez votre présentation sur les parties de l’algorithme que vous modifierez, afin de motiver et de contextualiser votre expérience.</p>
+</li>
+<li>
+<p>1 à 3 références définissant le modèle
+Citer et résumer ces informations dans votre discussion.</p>
+</li>
+</ul>
+<h3 id="3-experience-2-pages">3. Expérience (2 pages)<a class="headerlink" href="#3-experience-2-pages" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p>La ou les questions de recherche auxquelles votre expérience répond (mais ne répond pas nécessairement) - Autrement dit, qu’espérez-vous apprendre de l’expérience ?</p>
+</li>
+<li>
+<p>Conception :</p>
+</li>
+<li>
+<p>Identifier explicitement (une organisation en sous-sections et/ou en tableaux est acceptable) :</p>
+<ul>
+<li>
+<p>Hypothèse : une affirmation falsifiable concernant le résultat attendu de l’expérience, basée sur votre compréhension du modèle d’apprentissage, clairement motivée par votre ou vos questions de recherche. Elle doit être étroitement liée aux propriétés mathématiques, algorithmiques et de données/de stockage pertinentes du modèle associé à votre ou vos questions de recherche.</p>
+</li>
+<li>
+<p>Variables indépendantes (paramètres expérimentaux) que vous manipulerez, par exemple : hyperparamètres, forme du modèle, autres paramètres d’apprentissage, etc.</p>
+</li>
+<li>
+<p>Variables de contrôle (biais et hypothèses de modélisation) qui resteront constantes, mais qui pourraient modifier le résultat de l’expérience si elles n’étaient pas vraies ; et</p>
+</li>
+<li>
+<p>Variables dépendantes (analyse des résultats) pour les observations effectuées pendant et après l’apprentissage des systèmes, par exemple : indicateurs de performance, courbes d’apprentissage, intervalles de convergence en nombre d’époques, etc.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Méthodologie :</p>
+</li>
+<li>
+<p>Identifiez l’implémentation/base de code spécifique utilisée, tout traitement de données requis et un résumé des modifications/codes requis pour votre implémentation disponible afin de créer et d’exécuter les différentes conditions de votre expérience.</p>
+</li>
+<li>
+<p>Exigences :</p>
+</li>
+<li>
+<p>Vous devez utiliser une base de référence à laquelle vous comparerez vos modifications (« conditions »). Il peut s’agir de modifications apportées au modèle d’origine, d’un ensemble de données différent ou de paramètres expérimentaux différents. Le choix de la base de référence doit être motivé par votre ou vos questions de recherche et le ou les modèles concernés.</p>
+</li>
+<li>
+<p>Vos questions de recherche peuvent être simples, mais doivent viser à mieux comprendre un modèle d’apprentissage. « A sera-t-il plus performant que B ?» demande une observation isolée ; elle ne teste pas le comportement attendu sur la base d’une compréhension formelle (« modèle ») et ne constitue donc pas une question de recherche scientifique.</p>
+</li>
+<li>
+<p>L’expérience doit comporter au moins trois conditions pour une variable (hors recherche par grille ou autres méthodes d’ajustement des hyperparamètres pour chaque condition), afin de limiter vos efforts et de les gérer dans le temps imparti. Les conditions doivent être définies en modifiant une variable, par exemple l’architecture du réseau, la taille de l’intégration, différentes fonctions d’activation, etc.</p>
+</li>
+</ul>
+<h3 id="4-resultats-experimentaux-et-discussion-2-a-3-pages">4. Résultats expérimentaux et discussion (2 à 3 pages)<a class="headerlink" href="#4-resultats-experimentaux-et-discussion-2-a-3-pages" title="Permanent link">¶</a></h3>
+<p>Votre analyse doit se présenter comme un récit clair : en gros, une présentation claire des résultats, indiquant s’ils confirment ou infirment votre hypothèse, et ce qu’ils vous apprennent sur votre ou vos questions de recherche.</p>
+<ul>
+<li>
+<p>Résultats numériques de vos expériences sous forme de tableaux et/ou de figures. Inclure des valeurs métriques spécifiques dans la mesure du possible, par exemple en haut des barres des graphiques à barres.</p>
+</li>
+<li>
+<p>Des visualisations des résultats, si nécessaire, par exemple des courbes d’apprentissage, des tableaux de métriques, etc.</p>
+</li>
+<li>
+<p>Une analyse de la pertinence de ces résultats pour votre hypothèse, et de la manière dont ils éclairent votre compréhension de la ou des questions de recherche initiales, ainsi que des prochaines étapes possibles.</p>
+</li>
+</ul>
+<h3 id="5-references-1-page">5. Références (1 page)<a class="headerlink" href="#5-references-1-page" title="Permanent link">¶</a></h3>
+<h2 id="partie-2-code-finalimplementation">Partie 2 : Code final/Implémentation<a class="headerlink" href="#partie-2-code-finalimplementation" title="Permanent link">¶</a></h2>
+<p>Le code final/l’implémentation, également à remettre le 3/10/2026 à 20h GMT, sera noté sur 50 points. Cliquez <a href="../assets/PARC%202026%20AI%20Rubric%20&amp;%20Scoring%20Scale.pdf">ici</a> pour consulter la grille d’évaluation et l’échelle de notation. Soumettez le code final/l’implémentation par e-mail à <a href="mailto:info@parcrobotics.org">info@parcrobotics.org</a> et mettez en copie <a href="mailto:atapo@parcrobotics.org">atapo@parcrobotics.org</a>. 10 points seront déduits par jour de retard. Un fichier .zip contenant votre code, ainsi qu’un fichier README expliquant comment installer et exécuter votre système sur une machine Linux/Mac/Windows, est requis. Si votre code nécessite un <abbr title="Graphics Processing Unit">GPU</abbr>, assurez-vous d’inclure cette exigence dans votre fichier README. Il est fortement recommandé aux participants de commencer à partir d’un framework existant. Voici une liste (très) partielle des frameworks possibles :</p>
+<ul>
+<li>Tensorflow</li>
+<li>PyTorch</li>
+<li>Etc. Pour choisir leur(s) question(s)/sujet(s) de recherche, les équipes sont fortement encouragées à télécharger et tester un ou deux frameworks qui leur semblent intéressants, ainsi qu’à essayer quelques exemples fournis.</li>
+</ul>
+<h3 id="presentation-finale-virtuelle-prevue-du-8-au-9-octobre-2026-note-50">Présentation finale virtuelle | Prévue du 8 au 9 octobre 2026 | Note : 50<a class="headerlink" href="#presentation-finale-virtuelle-prevue-du-8-au-9-octobre-2026-note-50" title="Permanent link">¶</a></h3>
+<p>La présentation finale aura lieu en ligne le 8 ou le 9 octobre. Les équipes pourront choisir leur créneau horaire préféré selon le principe du premier arrivé, premier servi. Chaque équipe dispose de 15 minutes pour sa présentation, dont 10 minutes maximum pour présenter un résumé de son travail final (ce temps sera limité à 10 minutes) et 5 minutes pour répondre aux questions du jury. Chaque membre de l’équipe doit parler pendant au moins 2 minutes.</p>
+<p>La présentation sera notée sur 50 points. Cliquez <a href="../assets/PARC%202026%20AI%20Rubric%20&amp;%20Scoring%20Scale.pdf">ici</a> pour consulter la grille d’évaluation et l’échelle de notation. 2 points seront déduits pour chaque minute de parole au-delà de 10 minutes. De plus, 2 points seront déduits pour chaque membre de l’équipe ne respectant pas le délai minimum de 2 minutes.</p>
+<p>Éléments de discussion :</p>
+<ol>
+<li>
+<p>Tâche d’apprentissage et question(s) de recherche</p>
+</li>
+<li>
+<p>Modèle d’apprentissage</p>
+</li>
+<li>
+<p>Plan d’expérience (y compris le jeu de données)</p>
+</li>
+<li>
+<p>Résultats préliminaires, lien avec la ou les questions de recherche</p>
+</li>
+</ol>
+<h2 id="top-10-des-finalistes">Top 10 des finalistes<a class="headerlink" href="#top-10-des-finalistes" title="Permanent link">¶</a></h2>
+<h3 id="frais-dinscription-des-equipes-des-10-finalistes-date-limite-10102026">Frais d’inscription des équipes des 10 finalistes | Date limite : 10/10/2026<a class="headerlink" href="#frais-dinscription-des-equipes-des-10-finalistes-date-limite-10102026" title="Permanent link">¶</a></h3>
+<p>Les 10 finalistes participant au Sénégal doivent verser leurs frais d’inscription de 250 USD à PARC avant le 10 octobre 2026 pour garantir leur place. Ce paiement unique couvre l’intégralité de l’inscription de l’équipe. En contrepartie, PARC prendra en charge l’hébergement, les repas quotidiens (petit-déjeuner, déjeuner et dîner), le transport aller-retour depuis l’aéroport et le transport entre le dortoir et le site de compétition.</p>
+<p>Les équipes sont responsables de toutes les dépenses supplémentaires, notamment les frais de passeport et de visa, les frais de voyage vers le Sénégal et tout matériel optionnel, tel que des t-shirts personnalisés ou un drapeau national pour représenter leur pays d’origine au PARC.</p>
+<h3 id="soumission-du-rapport-final-et-du-code-date-limite-24102026">Soumission du rapport final et du code | Date limite : 24/10/2026<a class="headerlink" href="#soumission-du-rapport-final-et-du-code-date-limite-24102026" title="Permanent link">¶</a></h3>
+<p>Les finalistes ont la possibilité de soumettre le même rapport final et le même code/la même implémentation que lors des qualifications, ou d’en soumettre une version améliorée. Bien que les mises à jour et les ajustements soient encouragés, la soumission finale ne sera pas notée et aucun point supplémentaire ne sera attribué. Aucune pénalité ne sera appliquée en cas de non-soumission d’une nouvelle version ; dans ce cas, la soumission de l’équipe lors des qualifications sera utilisée par défaut. Le score final de l’équipe sera calculé en additionnant son score lors des qualifications à son score lors des présentations en direct de septembre.</p>
+<h3 id="presentations-finales-en-direct-date-limite-en-direct-au-concours-parc-2026-valeur-de-notation-115">Présentations finales en direct | Date limite : En direct au concours PARC 2026 | Valeur de notation : 115<a class="headerlink" href="#presentations-finales-en-direct-date-limite-en-direct-au-concours-parc-2026-valeur-de-notation-115" title="Permanent link">¶</a></h3>
+<p>La présentation finale aura lieu en personne pendant PARC 2026. Chaque équipe disposera d’une table et d’un espace dédiés pour exposer son travail. Les équipes sont invitées à apporter une affiche résumant visuellement les quatre points clés de leur présentation, ainsi qu’une copie imprimée de leur rapport final. Ces livrables visent à présenter le projet de l’équipe aux juges et au public. Les posters seront notés sur 15 points. Cliquez <a href="../assets/PARC%202026%20AI%20Rubric%20&amp;%20Scoring%20Scale.pdf">ici</a> pour consulter la grille d’évaluation et l’échelle de notation.</p>
+<p>Pour les présentations en direct, chaque équipe dispose de 7 minutes pour sa présentation PowerPoint (durée limitée à 7 minutes) et de 5 minutes pour répondre aux questions du jury. Chaque membre de l’équipe doit parler pendant au moins 1 minute. Comme pour les présentations précédentes, votre présentation finale doit inclure :</p>
+<ol>
+<li>
+<p>Tâche d’apprentissage et question(s) de recherche</p>
+</li>
+<li>
+<p>Modèle(s) d’apprentissage</p>
+</li>
+<li>
+<p>Plan d’expérience (y compris les modifications apportées aux données et aux paramètres de l’expérience par rapport à la proposition)</p>
+</li>
+<li>
+<p>Résultats et lien avec la question de recherche</p>
+</li>
+</ol>
+<p>La présentation sera notée sur 50 points. Cliquez <a href="../assets/PARC%202026%20AI%20Rubric%20&amp;%20Scoring%20Scale.pdf">ici</a> pour consulter la grille d’évaluation et l’échelle de notation. 2 points seront déduits pour chaque minute de parole au-delà de 7 minutes. 2 points supplémentaires seront déduits pour chaque membre de l’équipe qui ne présentera pas pendant le temps minimum requis d’une minute.</p>
+<p>Pendant la compétition, le modèle de chaque équipe sera testé sur des données inédites afin d’évaluer ses performances en situation réelle. Le modèle sera noté sur 50 points. Cliquez <a href="../assets/PARC%202026%20AI%20Rubric%20&amp;%20Scoring%20Scale.pdf">ici</a> pour consulter la grille d’évaluation et l’échelle de notation. Bien que les équipes aient basé leur travail sur un ensemble de données spécifique, nous leur fournirons un nouvel ensemble de données inédit afin d’évaluer la généralisation de leur modèle. Les données inédites seront conçues à partir du rapport final de chaque équipe soumis lors des qualifications. Selon la nature de leur projet, nous pourrons utiliser des données open source ou générer des données synthétiques afin de garantir leur pertinence pour leur tâche spécifique.
+Le public et les juges assisteront aux tests en direct pour découvrir les capacités du modèle en action. Dans leurs rapports et présentations, les équipes auront déjà défini leurs critères d’évaluation, tels que la précision ou le score F1, et expliqué leurs objectifs. Ce test final déterminera dans quelle mesure leur modèle répond à ces attentes face à de nouvelles données.</p>
+<h2 id="reglement">Règlement<a class="headerlink" href="#reglement" title="Permanent link">¶</a></h2>
+<p>Nous avons établi le règlement suivant pour le concours afin de garantir l’équité et une conduite appropriée entre les participants.</p>
+<h3 id="code-de-conduite">Code de conduite<a class="headerlink" href="#code-de-conduite" title="Permanent link">¶</a></h3>
+<p>Nous attendons de tous les participants qu’ils agissent de manière professionnelle et éthique, et qu’ils se conforment au code de conduite suivant :</p>
+<ul>
+<li>
+<p>Respecter les droits, la dignité et la vie privée des autres participants et des personnes impliquées dans le concours.</p>
+</li>
+<li>
+<p>Ne pas se livrer à toute forme de harcèlement, de discrimination ou d’intimidation.</p>
+</li>
+<li>
+<p>Ne pas adopter de comportement illégal ou contraire à l’éthique.</p>
+</li>
+<li>
+<p>Ne pas utiliser le concours et ses plateformes pour promouvoir ou faire la publicité de produits ou de services.</p>
+</li>
+</ul>
+<h3 id="disqualification">Disqualification<a class="headerlink" href="#disqualification" title="Permanent link">¶</a></h3>
+<p>Les participants peuvent être disqualifiés du concours pour les raisons suivantes :</p>
+<ul>
+<li>
+<p>Violation du règlement du concours.</p>
+</li>
+<li>
+<p>Fournir des informations fausses ou trompeuses.</p>
+</li>
+<li>
+<p>Adopter un comportement contraire à l’éthique ou illégal.</p>
+</li>
+<li>
+<p>Ne pas respecter les consignes ou les délais de soumission.</p>
+</li>
+<li>
+<p>Ne pas suivre toute autre instruction ou exigence fournie par les organisateurs du concours.</p>
+</li>
+</ul>
+<p>En cas de disqualification, le participant perdra tous les prix ou récompenses auxquels il aurait pu prétendre.</p>
+<h2 id="foire-aux-questions">Foire aux questions<a class="headerlink" href="#foire-aux-questions" title="Permanent link">¶</a></h2>
+<p><strong>1. Les équipes sont-elles tenues d’utiliser des données existantes ou open source, ou peuvent-elles collecter leurs propres données ?</strong></p>
+<p>Les équipes sont libres d’utiliser des données existantes ou open source ou de collecter leurs propres données pour leur projet. Cependant, pour la partie « données non disponibles » de la compétition finale du PARC 2026, nous fournirons des données open source ou synthétiques en fonction de la proposition de chaque équipe.</p>
+<p><strong>2. Existe-t-il des restrictions quant aux modèles d’apprentissage automatique que les équipes peuvent utiliser ?</strong></p>
+<p>Non, les équipes sont libres d’utiliser le modèle d’apprentissage automatique de leur choix.</p>
+<p><strong>3. Le code doit-il être pleinement fonctionnel ou un prototype suffit-il ?</strong></p>
+<p>Oui, le code doit être fonctionnel. Nous testerons le modèle de chaque équipe avec des données non disponibles afin d’évaluer son efficacité.</p>
+<p><strong>4. Tous les participants participeront-ils au PARC 2026 ?</strong></p>
+<p>Non, seules les <strong>10 meilleures équipes</strong> des qualifications seront qualifiées pour le PARC 2026.</p>
+<p><strong>5. Quel est le montant des frais d’inscription et que couvrent-ils ?</strong></p>
+<p>La participation aux qualifications est gratuite, mais des frais sont facturés aux 10 meilleures équipes finalistes qui concourent au Sénégal. Les frais de 250 USD sont un paiement unique par équipe qui couvre l’hébergement, les repas quotidiens (petit-déjeuner, déjeuner et dîner), le transport aéroportuaire et le trajet entre le dortoir et le stade de compétition.</p>
+<p><strong>6. Quels frais supplémentaires les équipes doivent-elles prendre en charge ?</strong></p>
+<p>Les équipes doivent prendre en charge leurs propres frais de passeport et de visa, leur voyage au Sénégal et tout article optionnel comme les t-shirts personnalisés ou le drapeau national.</p>
+<p><strong>7. Quand le paiement est-il dû et que se passe-t-il en cas de dépassement de la date limite ?</strong></p>
+<p>Les frais sont dus avant le 10 octobre 2026. Les équipes qui ne paient pas avant la date limite perdront leur place de finaliste.</p>
+<p><strong>8. Qui détient la propriété intellectuelle (PI) du projet ?</strong></p>
+<p>Les équipes conservent l’entière propriété de leur PI. Cependant, en participant, elles acceptent que PARC présente leur travail sans conséquences. Un formulaire de consentement signé confirmant cette acceptation doit être joint à la présentation du concept.</p>
+<p><strong>9. Existe-t-il une communauté où poser des questions autrement que par e-mail ?</strong></p>
+<p>Oui, voici le <a href="https://discord.gg/ZEsQ28sjC">lien</a> vers le serveur Discord de l’<abbr title="Artificial Intelligence">AI</abbr> League.</p>
+<p><strong>10. Que recevront les gagnants ?</strong></p>
+<p>L’équipe gagnante recevra un prix de <strong>1 000 USD</strong>.</p>
+<p><strong>11. Combien de personnes peuvent être dans une équipe et quel est l’âge requis ?</strong></p>
+<p>Les équipes doivent être composées de 2 à 5 membres, et tous les participants doivent être âgés de 18 ans ou plus pour participer.</p>
+<p><strong>12. Où indiquer le choix du papier par l’équipe ?</strong></p>
+<p>À ce <a href="https://docs.google.com/spreadsheets/d/1fjufaEVqoBDW6J4Ik9zFN4KVX3aLn7jlWZWmxqZxsas/edit?gid=0#gid=0">lien</a>.</p>
+<p><strong>13. Où sont stockées les vidéos des sessions enregistrées ?</strong></p>
+<p>À ce <a href="https://drive.google.com/drive/u/2/folders/1ROMNFD5K4SsX_YQ0txwHNMfhfb2QzSva?usp=share_link">lien</a>.</p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Retour en haut de la page
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tracking", "navigation.sections", "navigation.path", "navigation.expand", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
